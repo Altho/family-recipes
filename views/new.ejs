@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Recipe</title>
+</head>
+<body>
+<h1>Add a new recipe</h1>
+<form action="/add" method="POST" id="mainform" enctype="x-www-form-urlencoded">
+    <label for="name">Name : </label>
+    <input type="text" placeholder="Name of the recipe..." name="name">
+    <label for="category">Categories : </label>
+    <select id="category" name="category" size="6" multiple>
+        <option value="comfort">Comfort</option>
+        <option value="healthy">Healthy</option>
+        <option value="favorite">Kids' favorites</option>
+        <option value="quick">Quick</option>
+        <option value="cheap">Cheap</option>
+        <option value="fancy">Fancy</option>
+    </select>
+    <label for="time">Time : </label>
+    <input name="time" type="text">
+    <label for="ingredient">Add ingredient </label>
+    <input name="addingredient" id="ingredient" type="text">
+
+    <button id="addingredient">Add !</button>
+    <textarea id="recipe" name="recipeBody" rows="4" cols="50">
+  Recipe here...
+  </textarea>
+    <input type="file" name="img" />
+    <button>Submit</button>
+    <br>
+    <ul id="ingList">
+</form>
+
+
+</ul>
+<script type="module" src="/js/atittude.js"></script>
+</body>
+</html>
